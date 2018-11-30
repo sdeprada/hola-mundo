@@ -27,7 +27,7 @@
         <!-- Propiedad que se puede sobreescribir en la invocacion de maven: -DskipMutationTest=false -->
         <skipMutationTest>true</skipMutationTest>
         <pitest.version>1.4.0</pitest.version>
-	</properties>
+
   </properties>
 
   <dependencies>
