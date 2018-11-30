@@ -178,7 +178,7 @@
 				<timestampedReports>false</timestampedReports>
 				<!-- Indicamos ruta que no se borra en el clean para mantener entre ejecuciones activas/desactivas -->
 				<!-- En lugar del standard: ${project.build.directory}/pit-reports-->
-				<reportsDirectory>${project.basedir}/../pit-reports</reportsDirectory>
+				<!--<reportsDirectory>${project.basedir}/../pit-reports</reportsDirectory>-->
 			</configuration>
 		    </plugin>			
 			
