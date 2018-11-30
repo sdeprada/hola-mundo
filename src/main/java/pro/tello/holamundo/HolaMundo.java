@@ -8,10 +8,10 @@ public class HolaMundo {
 	public String saludar(int s) {
 		String saludo;
 		if ( s == 1 ) {
-			saludo = HolaMundo.SALUDO1;
+			return HolaMundo.SALUDO1;
 		} else {
-			saludo = HolaMundo.SALUDO2;
+			return HolaMundo.SALUDO2;
 		}
-		return saludo;
+		//return saludo;
 	}
 }
