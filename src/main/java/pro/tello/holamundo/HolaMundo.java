@@ -5,6 +5,7 @@ public class HolaMundo {
 	public static final String SALUDO = "Hola, Mundo!";
 
 	public String saludar() {
-		return HolaMundo.SALUDO;
+		//return HolaMundo.SALUDO;
+		return "Hola, Mundo!";
 	}
 }
