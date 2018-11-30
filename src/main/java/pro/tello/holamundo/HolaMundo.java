@@ -3,11 +3,13 @@ package pro.tello.holamundo;
 public class HolaMundo {
 	
 	public String saludar(int s) {
+		String saludo;
 		switch ( s ) {
 			case 1:
-				return "Hola gente";
+				saludo = "Hola gente";
 			default:
-				return "Hola";
+				saludo = "Hola";
 		}
+		return saludo;
 	}
 }
