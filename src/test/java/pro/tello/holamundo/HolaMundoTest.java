@@ -25,4 +25,11 @@ public class HolaMundoTest  {
 		//assertEquals("hola", holaMundo.saludar());
 		//assertEquals(HolaMundo.SALUDO, holaMundo.saludar());
 	}
+	
+	@Test
+	public void saludosParaUsal() {
+		
+		holaMundo.saludar(0);
+		assertTrue(true);
+	}
 }
