@@ -10,7 +10,7 @@ public class HolaMundo {
 			default:
 				saludo = "Hola USAL";
 		}
-		return s;
+		return saludo;
 		
 	}
 }
