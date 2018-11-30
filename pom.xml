@@ -106,6 +106,58 @@
 					</execution>
 				</executions>
 			</plugin>
+			
+		     <plugin>
+			<groupId>org.pitest</groupId>
+			<artifactId>pitest-maven</artifactId>
+			<version>${pitest.version}</version>
+			<configuration>
+			    <!-- Se salta por exceso de tiempo de construccion -->
+			    <skip>${skipMutationTest}</skip>
+			    <targetClasses>
+				<!-- Donde quiero que se ejecute -->
+				<param>pro.tello.*</param>
+			    </targetClasses>
+			    <targetTests>
+				<!-- Solo test unitarios -->
+				<param>pro.tello.*.*Test</param>
+			    </targetTests>
+			    <avoidCallsTo>
+				<avoidCallsTo>java.util.logging</avoidCallsTo>
+				<avoidCallsTo>org.apache.log4j</avoidCallsTo>
+				<avoidCallsTo>org.apache.commons.logging</avoidCallsTo>
+				<!-- Propios  -->
+				
+			    </avoidCallsTo>
+			    <mutators>
+				<mutator>CONDITIONALS_BOUNDARY</mutator>
+				<mutator>NEGATE_CONDITIONALS</mutator>
+				<mutator>REMOVE_CONDITIONALS</mutator>
+				<mutator>RETURN_VALS</mutator>
+				<mutator>VOID_METHOD_CALLS</mutator>
+				<mutator>NON_VOID_METHOD_CALLS</mutator>
+			    </mutators>
+			    <maxMutationsPerClass>10</maxMutationsPerClass>
+			    <outputFormats>
+				<outputFormat>XML</outputFormat>  
+			    </outputFormats>
+			    <!-- Solo se ejecutan mutaciones en clases invocadas directamente por los test -->
+			    <maxDependencyDistance>1</maxDependencyDistance>
+			    <threads>2</threads>
+			    <jvmArgs>
+				<value>${jacoco.powermock.agent}</value>
+				<!-- Necesario para compatibilidad con la JDK 8 -->
+				<value>${test.noverify}</value>
+			    </jvmArgs>
+			    <failWhenNoMutations>false</failWhenNoMutations>
+				<!-- Indicamos que no cree carpeta timestamp -->
+				<timestampedReports>false</timestampedReports>
+				<!-- Indicamos ruta que no se borra en el clean para mantener entre ejecuciones activas/desactivas -->
+				<!-- En lugar del standard: ${project.build.directory}/pit-reports-->
+	<!-- 					<reportsDirectory>${project.basedir}/../pit-reports</reportsDirectory> -->
+			</configuration>
+		    </plugin>			
+			
     </plugins>
   </build>
 
