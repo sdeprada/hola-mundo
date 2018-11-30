@@ -19,9 +19,10 @@ public class HolaMundoTest  {
 	
 	@Test
 	public void saludosParaTodos() {
-		//assertEquals(HolaMundo.SALUDO, holaMundo.saludar());
-		//assertEquals("hola", holaMundo.saludar());
-		holaMundo.saludar();
+		
+		holaMundo.saludar(1);
 		assertTrue(true);
+		//assertEquals("hola", holaMundo.saludar());
+		//assertEquals(HolaMundo.SALUDO, holaMundo.saludar());
 	}
 }
