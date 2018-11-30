@@ -6,9 +6,8 @@ public class HolaMundo {
 		
 		if ( s == 1) {
 				return "Hola gente";
-		} else {
-				return "Hola";
-		}
+		} 
+		return "Hola";
 		
 	}
 }
