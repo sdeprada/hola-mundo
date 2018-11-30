@@ -30,5 +30,6 @@ public class HolaMundoTest  {
 		
 		holaMundo.saludar(0);
 		assertTrue(true);
+		assertEquals(HolaMundo.SALUDO2, holaMundo.saludar(0));
 	}
 }
