@@ -4,10 +4,9 @@ public class HolaMundo {
 	
 	public String saludar(int s) {
 		String saludo;
-		switch ( s ) {
-			case 1:
+		if ( i == 1) {
 				saludo = "Hola gente";
-			default:
+		} else {
 				saludo = "Hola";
 		}
 		return saludo;
