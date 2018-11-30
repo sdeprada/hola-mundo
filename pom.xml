@@ -25,7 +25,7 @@
         <powermock.version>1.6.1</powermock.version>
         <!-- Pi Test -->
         <!-- Propiedad que se puede sobreescribir en la invocacion de maven: -DskipMutationTest=false -->
-        <skipMutationTest>true</skipMutationTest>
+        <skipMutationTest>false</skipMutationTest>
         <pitest.version>1.4.0</pitest.version>
 
   </properties>
