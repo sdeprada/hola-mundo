@@ -28,8 +28,8 @@ public class HolaMundoTest  {
 	@Test
 	public void saludosParaUsal() {
 		
-		holaMundo.saludar(0);
-		assertTrue(true);
+		//holaMundo.saludar(0);
+		//assertTrue(true);
 		assertEquals(HolaMundo.SALUDO2, holaMundo.saludar(0));
 	}
 }
