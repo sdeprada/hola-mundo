@@ -10,7 +10,7 @@ import org.junit.runners.JUnit4;
 @RunWith(JUnit4.class)
 public class HolaMundoTest  {
 	
-	/*private HolaMundo holaMundo;
+	private HolaMundo holaMundo;
 
 	@Before
 	public void setUp() {
@@ -31,5 +31,5 @@ public class HolaMundoTest  {
 		holaMundo.saludar(0);
 		assertTrue(true);
 		//assertEquals(HolaMundo.SALUDO2, holaMundo.saludar(0));
-	}*/
+	}
 }
