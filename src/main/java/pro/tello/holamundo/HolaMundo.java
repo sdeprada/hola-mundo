@@ -2,15 +2,16 @@ package pro.tello.holamundo;
 
 public class HolaMundo {
 	
+	public static final String SALUDO1 = "Hola a todos!";
+	public static final String SALUDO2 = "Hola a USAL!";
+	
+	
 	public String saludar(int s) {
-		String saludo;
-		switch ( s ) {
-			case 1:
-				saludo = "Hola a todos!";
-			default:
-				saludo = "Hola USAL";
+		if ( s == 1 ) {
+			return HolaMundo.SALUDO1;
+		} else {
+			return HolaMundo.SALUDO2;
 		}
-		return saludo;
 		
 	}
 }
