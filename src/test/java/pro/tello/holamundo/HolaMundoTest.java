@@ -20,16 +20,16 @@ public class HolaMundoTest  {
 	@Test
 	public void saludosParaTodos() {
 		
-		holaMundo.saludar(1);
-		assertTrue(true);
-		//assertEquals(HolaMundo.SALUDO1, holaMundo.saludar(1));
+		//holaMundo.saludar(1);
+		//assertTrue(true);
+		assertEquals(HolaMundo.SALUDO1, holaMundo.saludar(1));
 	}
 	
-	/*@Test
+	@Test
 	public void saludosParaUsal() {
 		
-		holaMundo.saludar(0);
-		assertTrue(true);
-		//assertEquals(HolaMundo.SALUDO2, holaMundo.saludar(0));
-	}*/
+		//holaMundo.saludar(0);
+		//assertTrue(true);
+		assertEquals(HolaMundo.SALUDO2, holaMundo.saludar(0));
+	}
 }
