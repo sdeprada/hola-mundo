@@ -3,7 +3,7 @@ package pro.tello.holamundo;
 public class HolaMundo {
 	
 	public static final String SALUDO1 = "Hola a todos!";
-	public static final String SALUDO2 = "Hola a USAL!";
+	public static final String SALUDO2 = "Hola VIEWNEXT!";
 	
 	
 	public String saludar(int s) {
