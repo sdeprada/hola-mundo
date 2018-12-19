@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "hola-mundo",
+                "projectName": "hola-mundo",
+                "workingDirectory": "c:\\Programas\\Jenkins\\proyecto\\hola-mundo",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "hola-mundo",
+                "projectName": "hola-mundo",
+                "workingDirectory": "c:\\Programas\\Jenkins\\proyecto\\hola-mundo",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}
