@@ -11,8 +11,6 @@ public class HolaMundo {
 		switch ( s ) {
 			case 1:
 				saludo =  "hola 1";
-			case 2: 
-				saludo =  "hola 2";
 			default:
 				saludo =  "hola 2";
 		}
