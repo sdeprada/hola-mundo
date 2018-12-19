@@ -20,17 +20,18 @@ public class HolaMundoTest  {
 	@Test
 	public void saludosParaTodos() {
 		
-		String saludo = holaMundo.saludar(1);
-		assertTrue( null != saludo && !("".equals(saludo)));
+		/* String saludo = holaMundo.saludar(1);
+		assertTrue( null != saludo && !("".equals(saludo))); */
+		assertEquals(HolaMundo.SALUDO1, holaMundo.saludar(1));
 
 	}
 
 	@Test
 	public void saludosParaDos() {
 		
-		String saludo = holaMundo.saludar(2);
-		assertTrue( null != saludo && !("".equals(saludo)));
-		
+		/* String saludo = holaMundo.saludar(2);
+		assertTrue( null != saludo && !("".equals(saludo))); */
+		assertEquals(HolaMundo.SALUDO2, holaMundo.saludar(2));
 	}
 	
 }
